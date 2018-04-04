@@ -24,23 +24,23 @@ function bot() {
   {
     output.innerHTML = "<p>You must be born in " + ( 2018 - input ) + ". I was born about a week ago.</p>";
     document.getElementById('name').value = "";
-    question = '<p>What is your favorite color?</p>'
+    question = '<p>What is the color of your shirt?</p>'
     setTimeout(timedQuestion , 2000);
   }
   else if (questionNum == 2)
   {
-    output.innerHTML = "<p id='myColor'> Wow " + input + " is my favorite color too!</p>";
+    output.innerHTML = "<p id='myColor'> Wow " + input + " is my favorite color!</p>";
     document.getElementById('myColor').style.color = input;
     document.getElementById('name').value = "";
-    question = '<p>What are you doing for the weekend?</p>'
+    question = '<p>What are you doing over the weekend?</p>'
     setTimeout(timedQuestion , 2000);
   }
   else if (questionNum == 3)
   {
-    output.innerHTML = "<p>Oh" + input + "? That sounds amazing!</p>";
+    output.innerHTML = "<p>Oh " + input + "? That sounds amazing!</p>";
     document.getElementById('name').value = "";
     question = '<p>Ok well I have to go now. Nice meeting you!</p>'
-     document.getElementById('name').style.display = 'none';
+    document.getElementById('name').style.display = 'none';
     document.getElementById('myButton').style.display = 'none';
 
     setTimeout(timedQuestion , 2000);
